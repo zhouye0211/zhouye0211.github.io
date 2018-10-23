@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="JavaScript的介绍​    JavaScript诞生于1995年。当时主要目的是处理以前由服务器端片语言（Perl）负责的一些输入验证操作。如今JavaScript从一个简单的输入验证器发展成为一门强大的语言，完全出乎人们的意料。应该说，它既是一门非常简单的语言，又是一门非常复杂的语言。说它简单，是因为学会使用它只需片刻功夫;说它复杂，是因为要真正掌握它则需要数年时间。想要全面理解和掌握J">
+<meta name="description" content="JavaScriptBOMwindow对象BOM的核心对象就是window对象。它表示浏览器中的一个实例，在浏览器中，window对象有双重的角色，它既是通过JavaScript访问浏览器窗口的一个接口，又是ECMAScript中规定的Global对象，这意味这网页中定义的任何一个对象、变量和函数，都以window作为其Global对象，因此有权访问parseInt()等方法。 Window 对象">
 <meta name="keywords" content="JavaScript,前端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript介绍">
-<meta property="og:url" content="https://zhouye0211.github.io/2018/09/10/JavaScript介绍/index.html">
+<meta property="og:url" content="https://zhouye0211.github.io/2018/09/20/JavaScriptBOM/index.html">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="JavaScript的介绍​    JavaScript诞生于1995年。当时主要目的是处理以前由服务器端片语言（Perl）负责的一些输入验证操作。如今JavaScript从一个简单的输入验证器发展成为一门强大的语言，完全出乎人们的意料。应该说，它既是一门非常简单的语言，又是一门非常复杂的语言。说它简单，是因为学会使用它只需片刻功夫;说它复杂，是因为要真正掌握它则需要数年时间。想要全面理解和掌握J">
+<meta property="og:description" content="JavaScriptBOMwindow对象BOM的核心对象就是window对象。它表示浏览器中的一个实例，在浏览器中，window对象有双重的角色，它既是通过JavaScript访问浏览器窗口的一个接口，又是ECMAScript中规定的Global对象，这意味这网页中定义的任何一个对象、变量和函数，都以window作为其Global对象，因此有权访问parseInt()等方法。 Window 对象">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-23T13:27:43.598Z">
+<meta property="og:updated_time" content="2018-10-23T13:39:52.025Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript介绍">
-<meta name="twitter:description" content="JavaScript的介绍​    JavaScript诞生于1995年。当时主要目的是处理以前由服务器端片语言（Perl）负责的一些输入验证操作。如今JavaScript从一个简单的输入验证器发展成为一门强大的语言，完全出乎人们的意料。应该说，它既是一门非常简单的语言，又是一门非常复杂的语言。说它简单，是因为学会使用它只需片刻功夫;说它复杂，是因为要真正掌握它则需要数年时间。想要全面理解和掌握J">
+<meta name="twitter:description" content="JavaScriptBOMwindow对象BOM的核心对象就是window对象。它表示浏览器中的一个实例，在浏览器中，window对象有双重的角色，它既是通过JavaScript访问浏览器窗口的一个接口，又是ECMAScript中规定的Global对象，这意味这网页中定义的任何一个对象、变量和函数，都以window作为其Global对象，因此有权访问parseInt()等方法。 Window 对象">
 
 
 
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="https://zhouye0211.github.io/2018/09/10/JavaScript介绍/">
+  <link rel="canonical" href="https://zhouye0211.github.io/2018/09/20/JavaScriptBOM/">
 
 
 
@@ -273,7 +273,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhouye0211.github.io/2018/09/10/JavaScript介绍/">
+    <link itemprop="mainEntityOfPage" href="https://zhouye0211.github.io/2018/09/20/JavaScriptBOM/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZHOU">
@@ -302,8 +302,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-10T20:53:47+08:00">
-                2018-09-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-20T21:50:57+08:00">
+                2018-09-20
               </time>
             
 
@@ -362,19 +362,58 @@
       
 
       
-        <h1 id="JavaScript的介绍"><a href="#JavaScript的介绍" class="headerlink" title="JavaScript的介绍"></a>JavaScript的介绍</h1><p>​    JavaScript诞生于1995年。当时主要目的是处理以前由服务器端片语言（Perl）负责的一些输入验证操作。如今JavaScript从一个简单的输入验证器发展成为一门强大的语言，完全出乎人们的意料。应该说，它既是一门非常简单的语言，又是一门非常复杂的语言。说它简单，是因为学会使用它只需片刻功夫;说它复杂，是因为要真正掌握它则需要数年时间。想要全面理解和掌握JavaScript，关键在于开清楚它的本质、历史和局限。</p>
-<h3 id="1、JavaScript简史"><a href="#1、JavaScript简史" class="headerlink" title="1、JavaScript简史"></a>1、JavaScript简史</h3><p>​    在web日益流行的同时，人们对客户端脚本语言的需求也越来越强烈，绝在部分因特网用户的速度仅为28.8kbit/s的“猫“上网，但网页的大小和复杂去不断增加，频繁提单数据和表单验证与服务器交换数据加重了用户的负担。当时走在技术革新的前沿的Netscape公司，决定着手开发一种客户端语言，用来处理这种简单的验证。</p>
-<p>​    当时就职于Netscape公司的布兰登.艾奇（Brendan Eich)，开始着手计划于1995年2月发布的一种名为livScript的脚本语言，为了搭上媒体吵热Java的顺风车，临时把LiveScript改名成JavaScript。</p>
-<p>​    由于JavaScript的成功，当时的竞争对手微软对自家的IE加大浏览器投入更多资源 ，在IE3加入名为JScript，导致Netscape日后蒙羞的一个标志性事件，然而，这个重大举措的同时，也标志 着JavaScript作为一门语言，其开发向前迈进了一大步。</p>
-<p>​    由于两个不同版本并存的局面已经暴露出问题的严重性，随着业界担心的日益加剧，JavaScript的标准化问题被提上日程。1997年，以JavaScript 1.1为蓝本的建议被提交到欧洲计算机制造商协会（ECMA）。经过数月的努力完成了ECMA-262–定义一种名了MCMAScript的新脚本语言的标准，自些以后，浏览器开发商也开始致力于ECMAScript作为各自JAvaScript实现的基础，也在不同程度上取得成功。</p>
-<h3 id="2、JavaScript的实现"><a href="#2、JavaScript的实现" class="headerlink" title="2、JavaScript的实现"></a>2、JavaScript的实现</h3><p>虽然JavaScript和ECMAScript通常都被人们用来表达相同的含义，但JavaScript的含义却比ECMA标准中支付宝的多得要多。没错，一个完整的JavaScript实现应该由下列三个不同部分组成：</p>
-<ul>
-<li>核心（ECMAScript)</li>
-<li>文档对象模型（DOM） </li>
-<li>浏览器对象模型（BOM）</li>
-</ul>
-<p>JavaScript这三个组成部分，在当前五个主要浏览器（IE、Firefox、Chrome、Safari、Opera）中得到了不同程度的支持，其中，所有浏览器对第3版本支持大体上还不错，而对新的版本支持度也越来越高，但DOM的支持则彼些差不多。尽管各浏览器都实现了某些众所周知的共同特性，但其他还是会因浏览器而异。</p>
-
+        <h1 id="JavaScriptBOM"><a href="#JavaScriptBOM" class="headerlink" title="JavaScriptBOM"></a>JavaScriptBOM</h1><h3 id="window对象"><a href="#window对象" class="headerlink" title="window对象"></a>window对象</h3><p>BOM的核心对象就是window对象。它表示浏览器中的一个实例，在浏览器中，window对象有双重的角色，它既是通过JavaScript访问浏览器窗口的一个接口，又是ECMAScript中规定的Global对象，这意味这网页中定义的任何一个对象、变量和函数，都以window作为其Global对象，因此有权访问parseInt()等方法。</p>
+<p>Window 对象表示浏览器中打开的窗口。如果文档包含框架（frame 或 iframe 标签），浏览器会为 HTML 文档创建一个 window 对象，并为每个框架创建一个额外的 window 对象。</p>
+<h5 id="Window-对象描述"><a href="#Window-对象描述" class="headerlink" title="Window 对象描述"></a>Window 对象描述</h5><p>Window 对象表示一个浏览器窗口或一个框架。在客户端 JavaScript 中，Window 对象是全局对象，所有的表达式都在当前的环境中计算。也就是说，要引用当前窗口根本不需要特殊的语法，可以把那个窗口的属性作为全局变量来使用。例如，可以只写 <a href="http://www.w3school.com.cn/jsref/dom_obj_document.asp" target="_blank" rel="noopener">document</a>，而不必写 window.document。</p>
+<p>同样，可以把当前窗口对象的方法当作函数来使用，如只写 alert()，而不必写 Window.alert()。</p>
+<p>除了上面列出的属性和方法，Window 对象还实现了核心 JavaScript 所定义的所有全局属性和方法。</p>
+<p>Window 对象的 window 属性和 <a href="http://www.w3school.com.cn/jsref/prop_win_self.asp" target="_blank" rel="noopener">self 属性</a>引用的都是它自己。当你想明确地引用当前窗口，而不仅仅是隐式地引用它时，可以使用这两个属性。除了这两个属性之外，parent 属性、top 属性以及 frame[] 数组都引用了与当前 Window 对象相关的其他 Window 对象。</p>
+<h3 id="location对象"><a href="#location对象" class="headerlink" title="location对象"></a>location对象</h3><p>Location 对象包含有关当前 URL 的信息。Location 对象是 Window 对象的一个部分，可通过 window.location 属性来访问。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/prop_loc_hash.asp" target="_blank" rel="noopener">hash</a></td>
+<td>设置或返回从井号 (#) 开始的 URL（锚）。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/prop_loc_host.asp" target="_blank" rel="noopener">host</a></td>
+<td>设置或返回主机名和当前 URL 的端口号。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/prop_loc_hostname.asp" target="_blank" rel="noopener">hostname</a></td>
+<td>设置或返回当前 URL 的主机名。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/prop_loc_href.asp" target="_blank" rel="noopener">href</a></td>
+<td>设置或返回完整的 URL。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/prop_loc_pathname.asp" target="_blank" rel="noopener">pathname</a></td>
+<td>设置或返回当前 URL 的路径部分。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/prop_loc_port.asp" target="_blank" rel="noopener">port</a></td>
+<td>设置或返回当前 URL 的端口号。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/prop_loc_protocol.asp" target="_blank" rel="noopener">protocol</a></td>
+<td>设置或返回当前 URL 的协议。</td>
+</tr>
+<tr>
+<td><a href="http://www.w3school.com.cn/jsref/prop_loc_search.asp" target="_blank" rel="noopener">search</a></td>
+<td>设置或返回从问号 (?) 开始的 URL（查询部分）。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="navigatot对象"><a href="#navigatot对象" class="headerlink" title="navigatot对象"></a>navigatot对象</h3><p>Navigator 对象包含有关浏览器的信息。</p>
+<p>注释：没有应用于 navigator 对象的公开标准，不过所有浏览器都支持该对象。</p>
+<h3 id="screen对象"><a href="#screen对象" class="headerlink" title="screen对象"></a>screen对象</h3><h3 id="history对象"><a href="#history对象" class="headerlink" title="history对象"></a>history对象</h3>
       
     </div>
     
@@ -406,7 +445,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/10/JavaScript引用类型/" rel="next" title="JavaScript介绍">
+              <a href="/2018/09/19/JavaScriptDOM/" rel="next" title="JavaScript介绍">
                 <i class="fa fa-chevron-left"></i> JavaScript介绍
               </a>
             
@@ -416,7 +455,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/09/12/JavaScript的基本概念/" rel="prev" title="JavaScript介绍">
+              <a href="/2018/09/21/JavaScript事件/" rel="prev" title="JavaScript介绍">
                 JavaScript介绍 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -552,7 +591,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript的介绍"><span class="nav-number">1.</span> <span class="nav-text">JavaScript的介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、JavaScript简史"><span class="nav-number">1.0.1.</span> <span class="nav-text">1、JavaScript简史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、JavaScript的实现"><span class="nav-number">1.0.2.</span> <span class="nav-text">2、JavaScript的实现</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScriptBOM"><span class="nav-number">1.</span> <span class="nav-text">JavaScriptBOM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#window对象"><span class="nav-number">1.0.1.</span> <span class="nav-text">window对象</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Window-对象描述"><span class="nav-number">1.0.1.0.1.</span> <span class="nav-text">Window 对象描述</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#location对象"><span class="nav-number">1.0.2.</span> <span class="nav-text">location对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#navigatot对象"><span class="nav-number">1.0.3.</span> <span class="nav-text">navigatot对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#screen对象"><span class="nav-number">1.0.4.</span> <span class="nav-text">screen对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#history对象"><span class="nav-number">1.0.5.</span> <span class="nav-text">history对象</span></a></li></ol></div>
             
 
           </div>

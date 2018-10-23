@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="JavaScript的介绍​    JavaScript诞生于1995年。当时主要目的是处理以前由服务器端片语言（Perl）负责的一些输入验证操作。如今JavaScript从一个简单的输入验证器发展成为一门强大的语言，完全出乎人们的意料。应该说，它既是一门非常简单的语言，又是一门非常复杂的语言。说它简单，是因为学会使用它只需片刻功夫;说它复杂，是因为要真正掌握它则需要数年时间。想要全面理解和掌握J">
+<meta name="description" content="JavaScript函数表达式JavaScript函数表达式既强大又令人困惑的特性，定义函数方式有两种：一是函数声明，二是函数表达式。 函数表达式： 12345var add = function(a, b) &amp;#123;    return a + b;  &amp;#125;;add(2, 3) // 5 递归递归的概念  在程序中函数直接或间接调用自己 直接调用自己 简介调用自己   跳出结构,有了">
 <meta name="keywords" content="JavaScript,前端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript介绍">
-<meta property="og:url" content="https://zhouye0211.github.io/2018/09/10/JavaScript介绍/index.html">
+<meta property="og:url" content="https://zhouye0211.github.io/2018/09/16/JavaScript函数表达式/index.html">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="JavaScript的介绍​    JavaScript诞生于1995年。当时主要目的是处理以前由服务器端片语言（Perl）负责的一些输入验证操作。如今JavaScript从一个简单的输入验证器发展成为一门强大的语言，完全出乎人们的意料。应该说，它既是一门非常简单的语言，又是一门非常复杂的语言。说它简单，是因为学会使用它只需片刻功夫;说它复杂，是因为要真正掌握它则需要数年时间。想要全面理解和掌握J">
+<meta property="og:description" content="JavaScript函数表达式JavaScript函数表达式既强大又令人困惑的特性，定义函数方式有两种：一是函数声明，二是函数表达式。 函数表达式： 12345var add = function(a, b) &amp;#123;    return a + b;  &amp;#125;;add(2, 3) // 5 递归递归的概念  在程序中函数直接或间接调用自己 直接调用自己 简介调用自己   跳出结构,有了">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-23T13:27:43.598Z">
+<meta property="og:updated_time" content="2018-10-23T13:34:28.687Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript介绍">
-<meta name="twitter:description" content="JavaScript的介绍​    JavaScript诞生于1995年。当时主要目的是处理以前由服务器端片语言（Perl）负责的一些输入验证操作。如今JavaScript从一个简单的输入验证器发展成为一门强大的语言，完全出乎人们的意料。应该说，它既是一门非常简单的语言，又是一门非常复杂的语言。说它简单，是因为学会使用它只需片刻功夫;说它复杂，是因为要真正掌握它则需要数年时间。想要全面理解和掌握J">
+<meta name="twitter:description" content="JavaScript函数表达式JavaScript函数表达式既强大又令人困惑的特性，定义函数方式有两种：一是函数声明，二是函数表达式。 函数表达式： 12345var add = function(a, b) &amp;#123;    return a + b;  &amp;#125;;add(2, 3) // 5 递归递归的概念  在程序中函数直接或间接调用自己 直接调用自己 简介调用自己   跳出结构,有了">
 
 
 
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="https://zhouye0211.github.io/2018/09/10/JavaScript介绍/">
+  <link rel="canonical" href="https://zhouye0211.github.io/2018/09/16/JavaScript函数表达式/">
 
 
 
@@ -273,7 +273,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhouye0211.github.io/2018/09/10/JavaScript介绍/">
+    <link itemprop="mainEntityOfPage" href="https://zhouye0211.github.io/2018/09/16/JavaScript函数表达式/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZHOU">
@@ -302,8 +302,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-10T20:53:47+08:00">
-                2018-09-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-16T20:56:57+08:00">
+                2018-09-16
               </time>
             
 
@@ -362,18 +362,37 @@
       
 
       
-        <h1 id="JavaScript的介绍"><a href="#JavaScript的介绍" class="headerlink" title="JavaScript的介绍"></a>JavaScript的介绍</h1><p>​    JavaScript诞生于1995年。当时主要目的是处理以前由服务器端片语言（Perl）负责的一些输入验证操作。如今JavaScript从一个简单的输入验证器发展成为一门强大的语言，完全出乎人们的意料。应该说，它既是一门非常简单的语言，又是一门非常复杂的语言。说它简单，是因为学会使用它只需片刻功夫;说它复杂，是因为要真正掌握它则需要数年时间。想要全面理解和掌握JavaScript，关键在于开清楚它的本质、历史和局限。</p>
-<h3 id="1、JavaScript简史"><a href="#1、JavaScript简史" class="headerlink" title="1、JavaScript简史"></a>1、JavaScript简史</h3><p>​    在web日益流行的同时，人们对客户端脚本语言的需求也越来越强烈，绝在部分因特网用户的速度仅为28.8kbit/s的“猫“上网，但网页的大小和复杂去不断增加，频繁提单数据和表单验证与服务器交换数据加重了用户的负担。当时走在技术革新的前沿的Netscape公司，决定着手开发一种客户端语言，用来处理这种简单的验证。</p>
-<p>​    当时就职于Netscape公司的布兰登.艾奇（Brendan Eich)，开始着手计划于1995年2月发布的一种名为livScript的脚本语言，为了搭上媒体吵热Java的顺风车，临时把LiveScript改名成JavaScript。</p>
-<p>​    由于JavaScript的成功，当时的竞争对手微软对自家的IE加大浏览器投入更多资源 ，在IE3加入名为JScript，导致Netscape日后蒙羞的一个标志性事件，然而，这个重大举措的同时，也标志 着JavaScript作为一门语言，其开发向前迈进了一大步。</p>
-<p>​    由于两个不同版本并存的局面已经暴露出问题的严重性，随着业界担心的日益加剧，JavaScript的标准化问题被提上日程。1997年，以JavaScript 1.1为蓝本的建议被提交到欧洲计算机制造商协会（ECMA）。经过数月的努力完成了ECMA-262–定义一种名了MCMAScript的新脚本语言的标准，自些以后，浏览器开发商也开始致力于ECMAScript作为各自JAvaScript实现的基础，也在不同程度上取得成功。</p>
-<h3 id="2、JavaScript的实现"><a href="#2、JavaScript的实现" class="headerlink" title="2、JavaScript的实现"></a>2、JavaScript的实现</h3><p>虽然JavaScript和ECMAScript通常都被人们用来表达相同的含义，但JavaScript的含义却比ECMA标准中支付宝的多得要多。没错，一个完整的JavaScript实现应该由下列三个不同部分组成：</p>
+        <h1 id="JavaScript函数表达式"><a href="#JavaScript函数表达式" class="headerlink" title="JavaScript函数表达式"></a>JavaScript函数表达式</h1><p>JavaScript函数表达式既强大又令人困惑的特性，定义函数方式有两种：一是函数声明，二是函数表达式。</p>
+<p>函数表达式：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> add = <span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + b;  </span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">add(<span class="number">2</span>, <span class="number">3</span>) <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+<h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><p><strong>递归的概念</strong></p>
 <ul>
-<li>核心（ECMAScript)</li>
-<li>文档对象模型（DOM） </li>
-<li>浏览器对象模型（BOM）</li>
+<li>在程序中函数直接或间接调用自己<ol>
+<li>直接调用自己</li>
+<li>简介调用自己</li>
+</ol>
+</li>
+<li>跳出结构,有了跳出才有结果</li>
 </ul>
-<p>JavaScript这三个组成部分，在当前五个主要浏览器（IE、Firefox、Chrome、Safari、Opera）中得到了不同程度的支持，其中，所有浏览器对第3版本支持大体上还不错，而对新的版本支持度也越来越高，但DOM的支持则彼些差不多。尽管各浏览器都实现了某些众所周知的共同特性，但其他还是会因浏览器而异。</p>
+<p><strong>递归的思想</strong></p>
+<ul>
+<li>递归的调用,最终还是要转换为自己这个函数<ol>
+<li>如果有个函数foo,如果他是递归函数,到最后问题还是转换为函数foo的形式</li>
+<li>递归的思想就是将一个未知问题转换为一个已解决的问题来实现</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function foo()&#123;</span><br><span class="line">	...foo(...)...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>递归的步骤(技巧)</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. 假设递归函数已经写好</span><br><span class="line">2. 寻找递推关系</span><br><span class="line">3. 将递推关系的结构转换为递归体</span><br><span class="line">4. 将临界条件加入到递归体中</span><br></pre></td></tr></table></figure>
+<p><strong>递归的案例</strong></p>
+<p>……</p>
+<h3 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h3><p>闭包的定义很简单：函数 A 返回了一个函数 B，并且函数 B 中使用了函数 A 的 变量，函数 B 就被称为闭包。</p>
+<h3 id="模仿块圾作用域"><a href="#模仿块圾作用域" class="headerlink" title="模仿块圾作用域"></a>模仿块圾作用域</h3><p>JavaScript没有块级作用域 </p>
+<p>for语句中定义的变量i在循环结束后，依旧会存在于循环外部的执行环境（作用域）中，在这里i的作用域是全局环境。具体来说就是：使用var关键字声明变量时，这个变量会自动添加到距离最近的可用环境中。对于函数而言，这个最近的环境就是函数的局部环境。如果变量在未经声明的情况下被初始化，则该变量会被自动添加到全局环境。</p>
+<p>不过有时候的确很需要块级作用域来解决一些问题，这时候我们就可以使用匿名函数来模仿块级作用域。</p>
+<p><strong>匿名函数</strong>就是没有名字的函数，有时候也被称为拉姆达（lamda）函数。</p>
+<h3 id="私有变量"><a href="#私有变量" class="headerlink" title="私有变量"></a>私有变量</h3><p>s中没有私有成员的概念，所有对象属性都是公有的，但是却是有<strong>私有变量</strong>的概念。任何函数中定义的变量都是私有变量，因为不能在函数的外部访问这些变量。私有变量包含：函数的参数，局部变量，和在函数内部定义的其他函数。</p>
 
       
     </div>
@@ -406,7 +425,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/10/JavaScript引用类型/" rel="next" title="JavaScript介绍">
+              <a href="/2018/09/15/JavaScript面向对象程序设计/" rel="next" title="JavaScript介绍">
                 <i class="fa fa-chevron-left"></i> JavaScript介绍
               </a>
             
@@ -416,7 +435,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/09/12/JavaScript的基本概念/" rel="prev" title="JavaScript介绍">
+              <a href="/2018/09/19/JavaScriptDOM/" rel="prev" title="JavaScript介绍">
                 JavaScript介绍 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -552,7 +571,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript的介绍"><span class="nav-number">1.</span> <span class="nav-text">JavaScript的介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、JavaScript简史"><span class="nav-number">1.0.1.</span> <span class="nav-text">1、JavaScript简史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、JavaScript的实现"><span class="nav-number">1.0.2.</span> <span class="nav-text">2、JavaScript的实现</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript函数表达式"><span class="nav-number">1.</span> <span class="nav-text">JavaScript函数表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#递归"><span class="nav-number">1.0.1.</span> <span class="nav-text">递归</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#闭包"><span class="nav-number">1.0.2.</span> <span class="nav-text">闭包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模仿块圾作用域"><span class="nav-number">1.0.3.</span> <span class="nav-text">模仿块圾作用域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#私有变量"><span class="nav-number">1.0.4.</span> <span class="nav-text">私有变量</span></a></li></ol></li></ol></div>
             
 
           </div>
